@@ -1,4 +1,4 @@
-specVersion: 1.0.0
+specVersion: 0.2.0
 name: subquery-starter
 version: 0.0.4
 runner:
@@ -24,10 +24,10 @@ dataSources:
       handlers:
         - handler: handleBlock
           kind: substrate/BlockHandler
-        - handler: handleEvent
-          kind: substrate/EventHandler
-          filter:
-            module: balances
-            method: Deposit
-        - handler: handleCall
-          kind: substrate/CallHandler
+        # - handler: handleEvent
+        #   kind: substrate/EventHandler
+        #   filter:
+        #     module: balances
+        #     method: Deposit
+        # - handler: handleCall
+        #   kind: substrate/CallHandler
