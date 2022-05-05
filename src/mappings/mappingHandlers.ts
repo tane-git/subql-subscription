@@ -29,5 +29,3 @@ export async function handleBlock(block: SubstrateBlock): Promise<void> {
 //     record.field5 = true;
 //     await record.save();
 // }
-
-
